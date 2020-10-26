@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-final String ipAddress = 'http://192.168.100.7:8080/';
+final String ipAddress = 'http://192.168.0.26:8080/';
 final String url = '${ipAddress}api/';
 
 Future<dynamic> postData(data, apiUrl) async {

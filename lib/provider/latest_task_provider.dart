@@ -63,7 +63,7 @@ class LatestTaskProvider extends ChangeNotifier {
   bool get isFetching => _isFetching;
 
   setUpTimedFetch() {
-    Timer timer = Timer.periodic(Duration(milliseconds: 10000), (timer) {
+    Timer timer = Timer.periodic(Duration(milliseconds: 5000), (timer) {
       getLatestTask();
     });
   }
